@@ -22,6 +22,7 @@
   - [6. Automate Health-UI deployment in ICKS cluster using IBM Cloud Delivery Pipelines.](#6-automate-health-ui-deployment-in-icks-cluster-using-ibm-cloud-delivery-pipelines)
     - [Create an IBM Cloud toolchain](#create-an-ibm-cloud-toolchain)
     - [Run your IBM Cloud Delivery Pipeline](#run-your-ibm-cloud-delivery-pipeline)
+  - [7. Create DB and API microservice](#7-create-db-and-api-microservice)
 
 ---
 
@@ -131,10 +132,10 @@ oc login --server=https://api.crc.testing:6443 --token=<your-token>
 ```
 
 
-3. Create a new project called **yourID-health-ui*
+3. Create a new project called **yourID-health-app*
   
 ```
-  oc new-project <yourID>-health-ui
+  oc new-project <yourID>-health-app
 ```
 
 Locate your local clone of health-ui repository and check the custom Dockerfile, which looks like the following:
@@ -700,3 +701,17 @@ And URL:
 ![URL](images/check-url.png)
 
 **Note**: Check and understand what just happened on your delivery pipeline, since all ran automatic it could be a bit mysterious how it works.
+
+## 7. Create DB and API microservice
+
+Now that you created Health-UI, you're ready to proceed creating and connecting health-DB and health-API. Read all the following steps before proceeding:
+
+1. Go to health-db and health-api repositories. (Fork and clone them locally).
+2. For each, go to "Manual Deployment" section, and follow the instructions to create each microservice.
+3. Once you checked your DB and API are working, go back to this repository and follow the next steps.
+
+4. Try to login to health-ui URL, you can use marioh/marioh as user and password to test.
+![health-ui](images/health-ui.png)
+
+5. Once in, you'll be able to navigate in the application:
+![health-ui](images/health-ui_explore.png)
