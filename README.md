@@ -502,7 +502,6 @@ Save your changes.
 7. And click on **Build Now**, to follow the process, under **Build History** it will appear a new build number, click on it:
 
 ![build-now](images/build-now.png)
-![build](images/build.png)
 
 8. Check build logs clicking on **Console Output**:
 
