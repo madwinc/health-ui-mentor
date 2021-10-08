@@ -16,6 +16,7 @@
     - [Create Openshift credentials](#create-openshift-credentials)
     - [Change pipeline to use a different Jenkinsfile](#change-pipeline-to-use-a-different-jenkinsfile)
   - [5. Automate Health-UI deployment in ICKS cluster using Jenkins Pipeline Strategy.](#5-automate-health-ui-deployment-in-icks-cluster-using-jenkins-pipeline-strategy)
+    - [Add participants into your ICKS](#add-participants-into-your-icks)
     - [Create health-ui pipeline](#create-health-ui-pipeline-1)
     - [Create ICKS credentials](#create-icks-credentials)
     - [Change pipeline to use a different Jenkinsfile](#change-pipeline-to-use-a-different-jenkinsfile-1)
@@ -516,6 +517,36 @@ Save your changes.
 ## 5. Automate Health-UI deployment in ICKS cluster using Jenkins Pipeline Strategy.
 
 ---
+
+### Add participants into your ICKS
+
+1. Go to [IBM Cloud](http://cloud.ibm.com/), ensure you are logged in your personal account.
+   
+2. Go to **Manage → Access (IAM)**
+   
+![manage-iam](images/manage-iam.png)
+
+3. In the left panel, select **Users** and click on **Invite Users**.
+
+![iamUsers](images/iam-users.png)
+
+![inviteusers](images/invite-users.png)
+
+4. Add participant(s) IDs in the box:
+![users-addresses](images/users-box.png)
+
+5. In the right panel select **Invite**
+![invite](images/users-box.png)
+
+6. You should see now the user in the **Users** list, click on the user name, and click on **Access Policies**, and click on **Assign access**
+![userpolicies](images/user-policies.png)
+
+7. Select **IAM services** and select **All identity and Access enabled services**
+![assign-access](images/assign-access.png)
+
+For participants assign **Editor** in Platform access, and **Writer** un Service access, and click on **Assign**
+![user-access](images/user-access.png)
+
 
 ### Create health-ui pipeline
 
