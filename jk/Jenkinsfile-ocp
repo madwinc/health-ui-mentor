@@ -99,8 +99,8 @@ pipeline {
     func_test    = 'true'
     scan_code    = 'false'
     OCP_SERVER   = 'https://api.crc.testing:6443'
-    OCP_USER     = credentials('OCP_USER')
-    OCP_PASS     = credentials('OCP_PASS')
+    OCP_USER     = 'OCP_USER'
+    OCP_PASS     = 'OCP_PASS'
     NS           = 'ignacio-rubio-health-app'
   }
 }
