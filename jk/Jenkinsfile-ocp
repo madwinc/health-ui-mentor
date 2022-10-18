@@ -98,7 +98,7 @@ pipeline {
     UI_Name      = 'health-ui'
     func_test    = 'true'
     scan_code    = 'false'
-    OCP_SERVER   = 'https://console-openshift-console.apps.cluster-5658w.5658w.sandbox2161.opentlc.com:6443'
+    OCP_SERVER   = 'https://api.cluster-5658w.5658w.sandbox2161.opentlc.com:6443''
     OCP_USER     = 'OCP_USER'
     OCP_PASS     = 'OCP_PASS'
     NS           = 'mad-health-ui'
